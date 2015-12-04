@@ -21,7 +21,7 @@ xcopy %serverSource%\binaries %ServerDeploy% /E /I /Y
 xcopy %serverSource%\MPMissions %serverDeploy%\MPMissions /E /I /Y
 
 :: profile
-xcopy %serverSource%\profile %serverDeploy%\cfgdayz /E /I /Y
+xcopy %serverSource%\profile %serverDeploy%\%configName% /E /I /Y
 
 copy %root%\startup_batch_files\start_server.bat %serverDeploy%
 
